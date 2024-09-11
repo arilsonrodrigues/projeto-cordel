@@ -1,25 +1,24 @@
-@charset "utf-8";
+@charset  "utf-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 *{
-    padding: 0px;
     margin: 0px;
-    line-height: 1em;
+    padding: 0px;
+    font-size: 1em;
 }
 
 :root{
-    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte-destaque: "Passion One", sans-serif;
-    --fonte-normal: "Sriracha", cursive;
+    --fonte1: Verdana, 'Geneva', Tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Sriracha", 'cursive';
 }
 
 html, body{
+    font-family: var(--fonte1);
     min-height: 100vh;
-    background-color: lightgray;
-    font-family: var(--fonte-padrao);
 }
 
 header{
@@ -27,24 +26,22 @@ header{
     color: white;
     text-align: center;
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 header h1{
-    font-size: 10vw;
-    padding-bottom: 10px;
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte2);
+    font-size: 8vw;
+    padding-top: 20px;
 }
 
-header p, footer p{
-    line-height: 1.5em;
+header  p{
+    padding-bottom: 20px;
 }
 
 header a, footer a{
-    color: white;
-    font-weight: bolder;
     text-decoration: none;
+    font-weight: bolder;
+    color: white;
 }
 
 header a:hover, footer a:hover{
@@ -52,53 +49,44 @@ header a:hover, footer a:hover{
 }
 
 section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    font-family: var(--fonte3);
     font-size: 3.5vw;
-    background-color: white;
-    text-indent: 50px;
-    font-family: var(--fonte-normal);
-}
-
-.normal{
-    padding-left: 50px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-}
-
-.normal > p{
-    padding-bottom: 2em;
-}
-
-.conteudo{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.199);
+    padding-left: 10%;
 }
 
-.conteudo > p{
-    background-color: rgba(0, 0, 0, 0.288);
+.normal p{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.imagem{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagem p{
+    background-color: rgba(0, 0, 0, 0.295);
+    color: white;
     display: inline-block;
     padding: 10px;
-    color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.301);
 }
 
-div#img1{
+section#img1{
     background-image: url('imagens/background001.jpg');
-    background-position: right center;
 }
 
-div#img2{
+section#img2{
     background-image: url('imagens/background002.jpg');
 }
 
 footer{
     background-color: black;
     color: white;
-    padding: 10px;
+    line-height: 1.5em;
     text-align: center;
+    padding: 10px;
 }
